@@ -33,6 +33,7 @@ def load_images_from_folder(folder, img_size):
                 labels.append(0 if label == 'NORMAL' else 1)  # 0 = Normal, 1 = Pneumonia
     return np.array(images), np.array(labels)
 
+
 # Load train and test data
 X_train, y_train = load_images_from_folder(train_dir, IMG_SIZE)
 X_test, y_test = load_images_from_folder(test_dir, IMG_SIZE)
